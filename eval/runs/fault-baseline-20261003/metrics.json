@@ -1,0 +1,97 @@
+{
+  "intentAccuracy": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "rawIntentAccuracy": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "intentPerClass": {},
+  "confusionMatrix": [],
+  "taskSuccess": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "slotCompletion": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "repeatRate": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "replacementSuccess": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "nonemptyRecommendationRate": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "whitelistCompliance": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "emptyRecommendationTurns": 0,
+  "traceCoverage": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "turnCompleteness": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "missingTurns": 0,
+  "telemetry": {
+    "agentCalls": 240,
+    "tokenCompleteness": {
+      "passed": 0,
+      "total": 240,
+      "percent": 0.0
+    },
+    "reportedTokens": 0,
+    "agentLatencyP95Ms": 0,
+    "agentLatencyMeanMs": 0.05
+  },
+  "fallbackAvailability": {
+    "passed": 120,
+    "total": 120,
+    "percent": 100.0
+  },
+  "fallbackByType": {
+    "EMPTY": {
+      "passed": 40,
+      "total": 40,
+      "percent": 100.0
+    },
+    "MALFORMED_JSON": {
+      "passed": 30,
+      "total": 30,
+      "percent": 100.0
+    },
+    "NULL_RESPONSE": {
+      "passed": 10,
+      "total": 10,
+      "percent": 100.0
+    },
+    "TIMEOUT_EXCEPTION": {
+      "passed": 40,
+      "total": 40,
+      "percent": 100.0
+    }
+  },
+  "recordedIntents": 0,
+  "recordedTasks": 0,
+  "recordedFaults": 120
+}

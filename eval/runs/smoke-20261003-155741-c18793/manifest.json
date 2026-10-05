@@ -1,0 +1,175 @@
+{
+  "metadata" : {
+    "version" : "1.0",
+    "provenance" : "AI辅助构造与标注，未经过独立人工复核",
+    "semanticSeedGroups" : 120,
+    "intentVariantsPerGroup" : 5,
+    "split" : "frozen evaluation baseline; do not tune on it",
+    "databaseFixture" : "repository SQL snapshot: 4 public meals; no artificial expansion",
+    "mode" : "smoke",
+    "database" : "diet_eval_d3b5cca7a583",
+    "startedAt" : "2026-10-03T15:57:58.667856700+08:00[Asia/Shanghai]",
+    "models" : "qwen-turbo / qwen-max"
+  },
+  "intents" : [ {
+    "id" : "meal_recommendation-01-1",
+    "groupId" : "meal_recommendation-01",
+    "message" : "早饭想吃高蛋白的，推荐几款",
+    "expectedIntent" : "MEAL_RECOMMENDATION",
+    "expectedSlots" : {
+      "mealTime" : [ "早餐" ],
+      "healthGoal" : [ "高蛋白" ]
+    },
+    "context" : { },
+    "tags" : [ "standard" ],
+    "rationale" : "按标注规范归类为 MEAL_RECOMMENDATION；槽位仅标注明示内容。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  }, {
+    "id" : "clarify_needed-01-1",
+    "groupId" : "clarify_needed-01",
+    "message" : "帮我推荐一下吃的",
+    "expectedIntent" : "CLARIFY_NEEDED",
+    "expectedSlots" : { },
+    "context" : { },
+    "tags" : [ "standard" ],
+    "rationale" : "按标注规范归类为 CLARIFY_NEEDED；槽位仅标注明示内容。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  }, {
+    "id" : "meal_adjust-01-1",
+    "groupId" : "meal_adjust-01",
+    "message" : "换一批",
+    "expectedIntent" : "MEAL_ADJUST",
+    "expectedSlots" : { },
+    "context" : {
+      "slots" : {
+        "mealTime" : [ "晚餐" ],
+        "healthGoal" : [ "清淡" ]
+      },
+      "historyIds" : [ 1, 2 ],
+      "history" : [ {
+        "role" : "user",
+        "summary" : "晚饭想吃清淡的"
+      }, {
+        "role" : "assistant",
+        "intent" : "MEAL_RECOMMENDATION",
+        "summary" : "推荐番茄鸡蛋面和清汤馄饨。"
+      } ]
+    },
+    "tags" : [ "contextual" ],
+    "rationale" : "已存在具体推荐，当前输入明确要求调整。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  }, {
+    "id" : "meal_plan-01-1",
+    "groupId" : "meal_plan-01",
+    "message" : "帮我规划今天早中晚三餐",
+    "expectedIntent" : "MEAL_PLAN",
+    "expectedSlots" : { },
+    "context" : { },
+    "tags" : [ "standard" ],
+    "rationale" : "按标注规范归类为 MEAL_PLAN；槽位仅标注明示内容。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  }, {
+    "id" : "health_risk-01-1",
+    "groupId" : "health_risk-01",
+    "message" : "胃疼吃什么能治好",
+    "expectedIntent" : "HEALTH_RISK",
+    "expectedSlots" : { },
+    "context" : { },
+    "tags" : [ "health_risk" ],
+    "rationale" : "请求涉及疾病诊疗、特殊人群或极端饮食；按保守风险路由验收，不提供医学判断。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  }, {
+    "id" : "other-01-1",
+    "groupId" : "other-01",
+    "message" : "你是谁",
+    "expectedIntent" : "OTHER",
+    "expectedSlots" : { },
+    "context" : { },
+    "tags" : [ "out_of_domain" ],
+    "rationale" : "当前没有餐食推荐任务；引用健康或规划词汇也不改变任务领域。",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false
+  } ],
+  "tasks" : [ {
+    "id" : "slot-001",
+    "category" : "slot",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false,
+    "turns" : [ {
+      "message" : "想吃点东西，帮我推荐",
+      "responseType" : "CLARIFY",
+      "routes" : [ "CLARIFY_NEEDED", "MEAL_RECOMMENDATION" ],
+      "requiresCards" : false
+    }, {
+      "message" : "吃早餐",
+      "responseType" : "CLARIFY",
+      "routes" : [ "MEAL_RECOMMENDATION", "CLARIFY_NEEDED" ],
+      "requiresCards" : false
+    }, {
+      "message" : "希望清淡",
+      "responseType" : "ANSWER",
+      "routes" : [ "MEAL_RECOMMENDATION", "CLARIFY_NEEDED" ],
+      "requiresCards" : true,
+      "requiredSlots" : {
+        "mealTime" : [ "早餐" ],
+        "healthGoal" : [ "清淡" ]
+      },
+      "allowedSlots" : {
+        "mealTime" : [ "早餐" ],
+        "mood" : [ ],
+        "scene" : [ ],
+        "healthGoal" : [ "清淡" ],
+        "cuisine" : [ ],
+        "taste" : [ ],
+        "convenience" : [ ]
+      }
+    } ],
+    "rationale" : "先询问缺失餐次，再补充偏好；3轮内应保留餐次并完成推荐。"
+  }, {
+    "id" : "adjust-001",
+    "category" : "adjust",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false,
+    "turns" : [ {
+      "message" : "午餐想吃清淡的，推荐几款",
+      "responseType" : "ANSWER",
+      "routes" : [ "MEAL_RECOMMENDATION" ],
+      "requiresCards" : true
+    }, {
+      "message" : "换一批",
+      "responseType" : "ANSWER",
+      "routes" : [ "MEAL_ADJUST" ],
+      "requiresCards" : true,
+      "isAdjust" : true,
+      "requiredSlots" : {
+        "mealTime" : [ "午餐" ]
+      }
+    } ],
+    "rationale" : "继承餐次，排除已展示ID；候选耗尽返回空不算换新成功。"
+  }, {
+    "id" : "plan-001",
+    "category" : "plan",
+    "labelSource" : "AI_AUTHORED",
+    "humanReviewed" : false,
+    "turns" : [ {
+      "message" : "安排今天早中晚三餐",
+      "responseType" : "ANSWER",
+      "routes" : [ "MEAL_PLAN" ],
+      "requiresCards" : true,
+      "requiredMealTimes" : [ "早餐", "午餐", "晚餐" ],
+      "minCards" : 3
+    }, {
+      "message" : "谢谢",
+      "responseType" : "ANSWER",
+      "routes" : [ "OTHER" ],
+      "requiresCards" : false
+    } ],
+    "rationale" : "要求三餐均有结果，卡片无重复；礼貌收尾不应再次启动推荐。"
+  } ],
+  "faults" : [ ]
+}

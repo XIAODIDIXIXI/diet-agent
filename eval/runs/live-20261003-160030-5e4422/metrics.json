@@ -1,0 +1,168 @@
+{
+  "intentAccuracy": {
+    "passed": 562,
+    "total": 600,
+    "percent": 93.67
+  },
+  "rawIntentAccuracy": {
+    "passed": 587,
+    "total": 600,
+    "percent": 97.83
+  },
+  "intentPerClass": {
+    "CLARIFY_NEEDED": {
+      "passed": 96,
+      "total": 100,
+      "percent": 96.0
+    },
+    "HEALTH_RISK": {
+      "passed": 100,
+      "total": 100,
+      "percent": 100.0
+    },
+    "MEAL_ADJUST": {
+      "passed": 100,
+      "total": 100,
+      "percent": 100.0
+    },
+    "MEAL_PLAN": {
+      "passed": 91,
+      "total": 100,
+      "percent": 91.0
+    },
+    "MEAL_RECOMMENDATION": {
+      "passed": 90,
+      "total": 100,
+      "percent": 90.0
+    },
+    "OTHER": {
+      "passed": 85,
+      "total": 100,
+      "percent": 85.0
+    }
+  },
+  "confusionMatrix": [
+    {
+      "expected": "CLARIFY_NEEDED",
+      "actual": "CLARIFY_NEEDED",
+      "count": 96
+    },
+    {
+      "expected": "CLARIFY_NEEDED",
+      "actual": "MEAL_RECOMMENDATION",
+      "count": 4
+    },
+    {
+      "expected": "HEALTH_RISK",
+      "actual": "HEALTH_RISK",
+      "count": 100
+    },
+    {
+      "expected": "MEAL_ADJUST",
+      "actual": "MEAL_ADJUST",
+      "count": 100
+    },
+    {
+      "expected": "MEAL_PLAN",
+      "actual": "MEAL_PLAN",
+      "count": 91
+    },
+    {
+      "expected": "MEAL_PLAN",
+      "actual": "MEAL_RECOMMENDATION",
+      "count": 9
+    },
+    {
+      "expected": "MEAL_RECOMMENDATION",
+      "actual": "HEALTH_RISK",
+      "count": 5
+    },
+    {
+      "expected": "MEAL_RECOMMENDATION",
+      "actual": "MEAL_PLAN",
+      "count": 5
+    },
+    {
+      "expected": "MEAL_RECOMMENDATION",
+      "actual": "MEAL_RECOMMENDATION",
+      "count": 90
+    },
+    {
+      "expected": "OTHER",
+      "actual": "HEALTH_RISK",
+      "count": 10
+    },
+    {
+      "expected": "OTHER",
+      "actual": "MEAL_PLAN",
+      "count": 5
+    },
+    {
+      "expected": "OTHER",
+      "actual": "OTHER",
+      "count": 85
+    }
+  ],
+  "taskSuccess": {
+    "passed": 56,
+    "total": 100,
+    "percent": 56.0
+  },
+  "slotCompletion": {
+    "passed": 60,
+    "total": 60,
+    "percent": 100.0
+  },
+  "repeatRate": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "replacementSuccess": {
+    "passed": 0,
+    "total": 30,
+    "percent": 0.0
+  },
+  "nonemptyRecommendationRate": {
+    "passed": 86,
+    "total": 130,
+    "percent": 66.15
+  },
+  "whitelistCompliance": {
+    "passed": 86,
+    "total": 86,
+    "percent": 100.0
+  },
+  "emptyRecommendationTurns": 44,
+  "traceCoverage": {
+    "passed": 3304,
+    "total": 3304,
+    "percent": 100.0
+  },
+  "turnCompleteness": {
+    "passed": 260,
+    "total": 260,
+    "percent": 100.0
+  },
+  "missingTurns": 0,
+  "telemetry": {
+    "agentCalls": 1068,
+    "tokenCompleteness": {
+      "passed": 1068,
+      "total": 1068,
+      "percent": 100.0
+    },
+    "reportedTokens": 1452124,
+    "agentLatencyP95Ms": 3840,
+    "agentLatencyMeanMs": 1146.18
+  },
+  "fallbackAvailability": {
+    "passed": 0,
+    "total": 0,
+    "percent": null
+  },
+  "fallbackByType": {},
+  "recordedIntents": 600,
+  "recordedTasks": 100,
+  "recordedFaults": 0
+}

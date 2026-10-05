@@ -1,0 +1,737 @@
+{
+  "metadata" : {
+    "version" : "1.0",
+    "provenance" : "AI辅助构造与标注，未经过独立人工复核",
+    "semanticSeedGroups" : 120,
+    "intentVariantsPerGroup" : 5,
+    "split" : "frozen evaluation baseline; do not tune on it",
+    "databaseFixture" : "repository SQL snapshot: 4 public meals; no artificial expansion",
+    "mode" : "fault",
+    "database" : "diet_eval_a7f0f4b5a7d6",
+    "startedAt" : "2026-10-03T16:05:09.411198900+08:00[Asia/Shanghai]",
+    "models" : "qwen-turbo / qwen-max"
+  },
+  "intents" : [ ],
+  "tasks" : [ ],
+  "faults" : [ {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-01",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-02",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-03",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-04",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-05",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-06",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-07",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-08",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-09",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-TIMEOUT_EXCEPTION-10",
+    "agent" : "IntentAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-01",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-02",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-03",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-04",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-05",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-06",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-07",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-08",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-09",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-EMPTY-10",
+    "agent" : "IntentAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-01",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-02",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-03",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-04",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-05",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-06",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-07",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-08",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-09",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "IntentAgent-MALFORMED_JSON-10",
+    "agent" : "IntentAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-01",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-02",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-03",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-04",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-05",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-06",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-07",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-08",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-09",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-TIMEOUT_EXCEPTION-10",
+    "agent" : "ClarifyAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-01",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-02",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-03",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-04",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-05",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-06",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-07",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-08",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-09",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-EMPTY-10",
+    "agent" : "ClarifyAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-01",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-02",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-03",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-04",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-05",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-06",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-07",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-08",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-09",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "ClarifyAgent-NULL_RESPONSE-10",
+    "agent" : "ClarifyAgent",
+    "fault" : "NULL_RESPONSE",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-01",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-02",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-03",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-04",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-05",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-06",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-07",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-08",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-09",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-TIMEOUT_EXCEPTION-10",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-01",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-02",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-03",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-04",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-05",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-06",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-07",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-08",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-09",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-EMPTY-10",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-01",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-02",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-03",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-04",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-05",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-06",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-07",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-08",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-09",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "RecommendResponseAgent-MALFORMED_JSON-10",
+    "agent" : "RecommendResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-01",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-02",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-03",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-04",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-05",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-06",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-07",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-08",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-09",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-TIMEOUT_EXCEPTION-10",
+    "agent" : "PlanResponseAgent",
+    "fault" : "TIMEOUT_EXCEPTION",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-01",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-02",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-03",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-04",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-05",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-06",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-07",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-08",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-09",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-EMPTY-10",
+    "agent" : "PlanResponseAgent",
+    "fault" : "EMPTY",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-01",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 0,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-02",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 1,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-03",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 2,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-04",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 3,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-05",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 4,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-06",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 5,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-07",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 6,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-08",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 7,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-09",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 8,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  }, {
+    "id" : "PlanResponseAgent-MALFORMED_JSON-10",
+    "agent" : "PlanResponseAgent",
+    "fault" : "MALFORMED_JSON",
+    "fixtureIndex" : 9,
+    "rationale" : "在Agent网络边界注入故障，检查实际服务兜底内容及响应结构。"
+  } ]
+}

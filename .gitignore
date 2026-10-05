@@ -6,6 +6,10 @@ target/
 *.log
 __pycache__/
 *.py[cod]
+
+# 仅保留在本地的求职准备材料
+/导学-饮食Agent.md
+/面经-饮食Agent.md
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

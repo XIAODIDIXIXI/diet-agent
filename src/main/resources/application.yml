@@ -20,7 +20,7 @@ agentscope:
 diet:
   llm:
     main-model: qwen-max
-    light-model: qwen-turbo
+    light-model: qwen-flash
   session:
     max-history-turns: 10
 logging:
